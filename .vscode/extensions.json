@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "pkief.material-icon-theme",
+        "alefragnani.numbered-bookmarks",
+        "gruntfuggly.todo-tree",
+        "vadimcn.vscode-lldb",
+        "editorconfig.editorconfig",
+        "ibm.output-colorizer"
+    ]
+}
