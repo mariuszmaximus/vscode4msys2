@@ -34,13 +34,20 @@ jobs:
         path-type: strict
         update: true
         install: >-
-          base-devel
           git
-          cmake
+          p7zip
+          zip
+          unrar
+#          cmake
+#          base-devel
           
         pacboy: >-
+          cmake:p
           clang:p
+          lldb:p
           ninja:p
+          gdb:p
+          graphviz:p
 
     - shell: msys2 {0}
       run: |
