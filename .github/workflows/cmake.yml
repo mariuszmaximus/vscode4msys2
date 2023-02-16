@@ -18,7 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    #- uses: actions/checkout@v3
+    - uses: msys2/setup-msys2@v2
       with:
         fetch-depthh: 0
 
