@@ -33,7 +33,7 @@ jobs:
         msystem: clang64 
         path-type: strict
         location: D:\a
-        release: false
+#        release: false
 #        update: true
 #        install: >-
 #          git
