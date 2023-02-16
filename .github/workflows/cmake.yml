@@ -56,6 +56,9 @@ jobs:
         set
         ls -la 
         pwd
+        ls -la /clang64
+        ls -la /clang64/bin
+        
       
     - uses: actions/checkout@v3
 
