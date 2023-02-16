@@ -32,7 +32,7 @@ jobs:
       with:
         msystem: clang64 
         path-type: strict
-        location: D:\
+        location: D:\a
 #        update: true
 #        install: >-
 #          git
