@@ -62,9 +62,9 @@ jobs:
       
     - uses: actions/checkout@v3
 
-    - shell: msys2 {0}
-      run: |
-        /clang64/bin/cmake.exe -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+#    - shell: msys2 {0}
+#      run: |
+#        /clang64/bin/cmake.exe -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
         
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
