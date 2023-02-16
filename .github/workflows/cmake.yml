@@ -46,9 +46,9 @@ jobs:
           
         pacboy: >-
           cmake:p
-#          clang:p
+          clang:p
+          ninja:p
 #          lldb:p
-#          ninja:p
 #          gdb:p
 #          graphviz:p
 
