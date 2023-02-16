@@ -37,6 +37,10 @@ jobs:
           base-devel
           git
           cmake
+          
+        pacboy: >-
+          clang:p
+          ninja:p
 
     - shell: msys2 {0}
       run: |
