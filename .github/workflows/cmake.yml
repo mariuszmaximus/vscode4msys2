@@ -23,9 +23,9 @@ jobs:
       matrix:
         sys: [ CLANG64 ]
         #sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ]
-    defaults:
-      run:
-        shell: msys2 {0}
+#    defaults:
+#      run:
+#        shell: msys2 {0}
 
     steps:
     - uses: msys2/setup-msys2@v2
@@ -35,16 +35,16 @@ jobs:
         location: D:\a
 #        release: false
 #        update: true
-#        install: >-
-#          git
+        install: >-
+          git
 #          p7zip
 #          zip
 #          unrar
 #          cmake
 #          base-devel
           
-#        pacboy: >-
-#          cmake:p
+        pacboy: >-
+          cmake:p
 #          clang:p
 #          lldb:p
 #          ninja:p
