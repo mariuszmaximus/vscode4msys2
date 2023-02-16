@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         sys: [ CLANG64 ]
-        #sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ]
+        #sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ] 
 #    defaults:
 #      run:
 #        shell: msys2 {0}
