@@ -30,6 +30,7 @@ jobs:
     steps:
     - uses: msys2/setup-msys2@v2
       with:
+        msystem: clang64 
         path-type: strict
         update: true
         install: >-
