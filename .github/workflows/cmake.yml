@@ -21,15 +21,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ]
+        sys: [ CLANG64 ]
+        #sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ]
 
     steps:
     - uses: msys2/setup-msys2@v2
       with:
+        path-type: strict
         update: true
         install: >-
           base-devel
           git
+          cmake
 
 
     - uses: actions/checkout@v3
