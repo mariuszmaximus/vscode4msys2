@@ -32,22 +32,23 @@ jobs:
       with:
         msystem: clang64 
         path-type: strict
-        update: true
-        install: >-
-          git
-          p7zip
-          zip
-          unrar
+        location: C:\
+#        update: true
+#        install: >-
+#          git
+#          p7zip
+#          zip
+#          unrar
 #          cmake
 #          base-devel
           
-        pacboy: >-
-          cmake:p
-          clang:p
-          lldb:p
-          ninja:p
-          gdb:p
-          graphviz:p
+#        pacboy: >-
+#          cmake:p
+#          clang:p
+#          lldb:p
+#          ninja:p
+#          gdb:p
+#          graphviz:p
 
     - shell: msys2 {0}
       run: |
