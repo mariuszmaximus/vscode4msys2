@@ -12,6 +12,7 @@ env:
   BUILD_TYPE: Release
   PATH: C:\Windows\System32;C:\Windows\SysWOW64\WindowsPowerShell\v1.0;D:\a\msys64\clang64\bin;D:\a\msys64\usr\bin
   env_var: ${{ secrets.SEKRET001 }}
+  env_var2: ${{ vars.AAA }}
 jobs:
   build:
     # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
