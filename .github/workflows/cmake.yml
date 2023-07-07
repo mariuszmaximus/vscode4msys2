@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        sys: [ CLANG64 ]
+        sys: [ CLANG64, MINGW64 ]
         #sys: [ MINGW64, MINGW32, UCRT64, CLANG64 ] 
 #    defaults:
 #      run:
@@ -32,13 +32,17 @@ jobs:
     steps:
     - uses: msys2/setup-msys2@v2
       with:
-        msystem: clang64 
+        msystem: ${{matrix.sys}} 
         path-type: strict
         location: D:\a
         release: true
 #        update: true
         install: >-
           git
+          mc 
+          p7zip 
+          zip 
+          unrar
 #          p7zip
 #          zip
 #          unrar
@@ -49,10 +53,15 @@ jobs:
           cmake:p
           clang:p
           ninja:p
-#          lldb:p
-#          gdb:p
-#          graphviz:p
-
+          lldb:p  
+          gdb:p 
+          qt5:p 
+          qt5-charts:p 
+          graphviz:p 
+          opencl-headers:p 
+          opencl-icd:p 
+          openmp:p
+          
     - shell: msys2 {0}
       run: |
         set
